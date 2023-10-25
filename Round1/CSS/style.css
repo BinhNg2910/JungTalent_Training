@@ -1,0 +1,825 @@
+*{
+
+}
+
+html{
+    color: #564E4E;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+#main{
+
+}
+
+#header{
+    background: url(/Round1/assets/img/1-header/sofa.png) top center / cover no-repeat;
+    color: white;
+    height: 1080px;
+    width: auto;
+
+}
+
+#header .head{
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    position: relative;
+}
+
+#header .head .head-logo{
+    position: absolute;
+    left: 5%;
+} 
+
+#header .head .header-logo-img{
+    width: 100%;
+}
+
+#nav{
+    /* align-items: center; */
+    margin: 4px 0 0 0;
+    padding: 0;
+    display: flex;
+}
+
+#nav > li{
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#nav > li > img {
+    margin-left: 5px;
+    width: 10px;
+    height: 7px;
+}
+
+#header .mid{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+}
+
+#header .mid .title{
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 600;
+    margin: 165px 0 40px 0;
+    width: 40%;
+}
+
+#header .mid .subtitle{
+    margin: 0;
+    width: 27%;
+}
+
+#content{
+    margin-top: 80px;
+    padding: 0 80px;
+}
+
+#reason-section{
+    padding: 80px 80px 0 80px;
+}
+
+#reason-section .question{
+    font-size: 36px;
+    line-height: 72px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+#reason-section .subpart-reason{
+    display: flex;
+}
+
+#reason-section .subpart-reason .table{
+    font-size: 18px;
+    line-height: 36px;
+    width: calc(100% / 4) ;
+    padding: 16px 20px 20px 20px;
+    margin-left: 20px;
+}
+
+#reason-section .table .reason-icon{
+    width: 60px;
+    height: 60px;
+}
+
+#reason-section .table .title{
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+#reason-section .table .description{
+    margin: 0 0 20px 0;
+    width: 95%;
+}
+
+#reason-section .more-description{
+    margin: 0;
+}
+
+.more-description{
+    color: #F79489;
+    text-decoration: none;
+}
+
+#reason-section .extra-table{
+    border: 1px solid #FADCD9;
+    border-radius: 10px;
+    box-shadow: 4px 2px 10px 2px #F7948933;
+    margin-left: 0 !important;
+}
+
+#visualizing-section{
+    padding-top: 200px;
+    display: flex;
+    line-height: 36px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#visualizing-section .description{
+    padding: 0 0 0 80px;
+    width: 45%;
+}
+
+#visualizing-section .title{
+    font-size: 36px;
+    line-height: 72px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#visualizing-section .symbol{
+    float: right;
+    border: 1px;
+    color: #F79489;
+    width: 16px;
+    height: 16px;
+}
+
+#visualizing-section .description_1{
+    width: 95%;
+    margin: 20px 0 0 0;
+}
+
+#visualizing-section .description_2{
+    font-weight: 300;
+    opacity: 0.7;
+    width: 95%;
+    margin: 20px 0 0 0;
+}
+
+#visualizing-section .category{
+    width: 95%;
+    margin: 20px 0 0 0;
+}
+
+#visualizing-section .more-description{
+    margin: 20px 0 0 0;
+}
+
+#visualizing-section .bar{
+    height: 400px;
+    width: 2px;
+    margin-top: 35px;
+    margin-right: 1%;
+}
+
+#visualizing-section .visualizing-img-div{
+    margin: 30px 0 0 0;
+    margin-right: 80px;
+    width: 45%;
+}
+
+#visualizing-section .visualizing-img{
+    width: 100%;
+    height: auto;
+}
+
+#product-section{
+    margin: 200px 80px 100px 80px;
+}
+
+#product-section .product-title{
+    text-align: center;
+    font-size: 36px;
+    line-height: 72px;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+}
+
+#product-section .product-subpart{
+    display: flex;
+    justify-content: space-between;
+}
+
+#product-section .product{
+    width: calc((100% - 3*1%)/ 4);
+    height: auto;
+    font-size: 14px;
+}
+
+#product-section .product-img{
+    width: 100%;
+    height: 70%;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product-section .product-img > img{
+    width: auto;
+    height: auto;
+}
+
+#product-section .product-description{
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 33px;
+}
+
+#product-section .product .product-subtitle{
+    margin: 0;
+    font-size: 18px;
+}
+
+#product-section .product .product-type{
+    color: #C4C4C4;
+    margin: 10px 0;
+}
+
+#product-section .product .rating-img{
+
+}
+
+#product-section .product .price{
+    margin: 20px 0 0 0;
+}
+
+#service-section{
+    background-color: #FAF5F2;
+    height: 800px;
+    margin-top: 167px;
+    padding: 84px 80px 0 80px;
+}
+
+#service-section .title{
+    text-align: center;
+    font-size: 36px;
+    line-height: 72px;
+    font-weight: 600;
+    margin: 0 0 110px 0;
+}
+
+#service-section .service-description{
+    display: flex;
+    justify-content: space-between;
+}
+
+#service-section .subpart{
+    width: calc((100% - 2*70px)/ 3);
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#service-section .subpart-title{
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#service-section .subpart-description{
+    margin: 10px 0 20px 0;
+}
+
+#service-section .subpart-person{
+    display: flex;
+    bottom: 0;
+}
+
+#service-section .subpart-person .ava{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+#service-section .subpart-person .name{
+    margin: 0;
+    font-weight: 600;
+}
+#service-section .subpart-person .career-position{
+    margin: 0;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+#feeling-section{
+    display: flex;
+    margin-top: 200px;
+}
+
+#feeling-section .feeling-img-div{
+    width: 50%;
+    padding-left: 80px;
+    padding-right: 40px;
+}
+
+#feeling-section .feeling-img-div .feeling-img{
+    width: 100%;
+    height: auto;
+}
+
+#feeling-section .feeling-description{
+    width: 50%;
+    padding-right: 80px;
+    padding-left: 40px;
+}
+
+.feeling-description .feeling-title{
+    font-size: 36px;
+    line-height: 72px;
+    margin: 0 0 0 0;
+    font-weight: 600;
+}
+
+.feeling-description .subpart-description{
+    font-size: 18px;
+    line-height: 36px;
+    margin: 20px 0 40px 0;
+}
+
+.feeling-description .email{
+    padding-left: 20px;
+    padding-right: 8px;
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid rgba(250, 220, 217, 1);
+    /* background-color: #FADCD9; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feeling-description .email p{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    color: rgba(247, 148, 137, 1);
+}
+
+.feeling-description .email img{
+    float: right;
+}
+
+#footer{
+    height: 600px;
+    margin-top: 200px;
+    /* padding: 100px 80px 40px 80px; */
+    background: linear-gradient(275.58deg, #000000 0%, #4B4B4B 100%);
+    color: white;
+    size: 18px;
+    line-height: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer .extra-category{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 80px 0 80px;
+}
+
+#footer .branch-logo{
+    width: 100%;
+}
+
+#footer .extra-category .footer-title{
+    color: rgba(250, 220, 217, 1);
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+#footer .extra-category .factor{
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#footer .copyright{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#footer .copyright p{
+    margin-bottom: 40px;
+}
+/* For both mobile and tablet */
+/* @media only screen and (max-width: 63.9375em) { */
+
+/* Tablet: width >= 740px and width < 1024px */
+/* @media only screen and (min-width: 46.25em) and (max-width: 63.9375em){ */
+
+/* For both mobile and tablet */
+/* 63.9375em */
+@media only screen and (max-width: 1024px) {
+    #header{
+        background: url(/Round1/assets/img/1-header/sofa-mobile.png) top center / cover no-repeat;
+        width: auto;
+        height: 800px;
+    }
+    #nav{
+        display: none;
+    }
+    #header .head{
+        justify-content: space-between;
+        padding: 20px 20px 0 20px;
+    }
+    #header .mid{
+        width: auto;
+        margin-top: 100px;
+    }
+    #header .mid .title{
+        font-size: 36px;
+        line-height: 72px;
+        font-weight: 600;
+        margin: 0 0 20px 0;
+        width: 60%;
+    }
+    #header .mid .subtitle{
+        font-size: 24px;
+        line-height: 48px;
+        font-weight: 400;
+        width: 60%;
+    }
+    #header .mobile-3bars{
+        height: 35px;
+        width: auto;
+        position: absolute;
+        right: 5%;
+    }
+    /* reason */
+    #reason-section{    
+        padding: 30px 30px 0 30px;
+    }
+    #reason-section .subpart-reason{
+        display: block;
+    }
+    #reason-section .question{
+        display: none;
+    }
+    #reason-section .subpart-reason .table{
+        padding: 10px;
+        margin: 0;
+        font-size: 24px;
+        line-height: 48px;
+        width: 100%;
+    }
+    #reason-section .table .reason-icon{
+        width: 56px;
+        height: 56px;
+    }
+    #reason-section .table .title{
+        margin: 0;
+    }
+    #reason-section .extra-table{
+        border: none;
+        box-shadow: none;
+    }
+    #reason-section .table .description{
+        margin-bottom: 10px;
+    }
+
+    /* visualize */
+    #visualizing-section{
+        flex-direction: column-reverse;
+        padding-top: 100px;
+    }
+    .bar{
+        display: none;
+    }
+    #visualizing-section .visualizing-img-div{
+        width: auto;
+        padding: 0 20px;
+        margin: 0;
+    }
+    #visualizing-section .visualizing-img{
+        width: 100%;
+    }
+    #visualizing-section .title{
+        font-size: 36px;
+        line-height: 72px;
+        margin-top: 100px;
+    }
+    #visualizing-section .description{
+        padding: 0 20px 0 20px;
+        font-size: 24px;
+        line-height: 48px;
+        width: auto;
+    }
+    #visualizing-section .description_1{
+        padding-bottom: 10px;
+        margin-top: 20px;
+    }
+    #visualizing-section .description_2{
+        margin: 10px 0 0 0;
+        padding-bottom: 10px;
+    }
+    #visualizing-section .category{
+        margin-top: 10px;
+        width: 100%;
+    }
+    #visualizing-section .more-description{
+        margin: 20px 0 0 0;
+    }
+
+    /* product */
+    #product-section{
+        margin: 0;
+        padding-top: 100px;
+    }
+    
+    #product-section .product-title{
+        font-size: 36px;
+        line-height: 72px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    #product-section .product-subpart{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0 20px;
+    }
+
+    #product-section .product{
+        width: calc(100% - 3%);
+        font-size: 14px;
+        margin-bottom: 100px;
+    }
+    #product-section .product-img{
+        width: 100%;
+        height: 80%;
+    }
+    #product-section .product-img > img{
+        width: 50%;
+        height: auto;
+    }
+    #product-section .product-description{
+        margin: 10px 0 40px 17px;
+        padding: 0;
+    }
+    .price{
+        display: none;
+    }
+    .price-extra{
+        display: block !important;
+        margin: 0;
+    }
+    /* service */
+    #service-section{
+        margin-top: 60px;
+        padding: 40px 20px 0 20px;
+        height: 1200px;
+    }
+    #service-section .title{
+        margin-bottom: 0;
+    }
+    #service-section .service-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #service-section .subpart{
+        width: auto;
+        /* font-size: 100px;
+        line-height: 72px; */
+        font-weight: 400;
+        margin-top: 40px;
+    }
+    #service-section .subpart-title{
+        font-size: 28px;
+        line-height: 56px;
+        margin: 0;
+    }
+    #service-section .subpart-description{
+        font-size: 24px;
+        line-height: 48px;
+        margin: 10px 0 14px 0;
+    }
+    #service-section .subpart-person .ava{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+    #service-section .subpart-person .name{
+        font-size: 28px;
+        line-height: 56px;
+    }
+    #service-section .subpart-person .career-position{
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+    /* feeling */
+    #feeling-section{
+        flex-direction: column;
+        margin: 0;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding: 0;
+    }
+    #feeling-section .feeling-img-div{
+        width: auto;
+        padding: 0 20px;
+    }
+    #feeling-section .feeling-description{
+        width: auto;
+        margin-top: 40px;
+    }
+    .feeling-description .feeling-title{
+        font-size: 28px;
+        line-height: 56px;
+    }
+    .feeling-description .subpart-description{
+        font-size: 24px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+    .feeling-description .email{
+        font-size: 20px;
+        line-height: 40px;
+        width: 560px;
+        height: 76px;
+    }
+    .feeling-description .email img{
+        width: 56px;
+        height: 56px;
+    }
+
+    /* footer */
+    #footer{
+        height: auto;
+        margin-top: 0;
+    }
+    #footer .extra-category{
+        flex-direction: column;
+        padding: 40px;
+    }
+    #footer .footer-logo{
+        width: 200px;
+        height: auto;
+    }
+    #footer .extra-category .footer-title{
+        font-size: 22px;
+        line-height: 36px;
+    }
+    #footer .extra-category .factor{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #footer .category{
+        margin-top: 80px;
+    }
+    #footer .extra-category .factor{
+        margin: 20px 0 0 0;
+    }
+    #footer .copyright p{
+        margin: 100px 0 20px 0;
+    }
+}
+
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    #header{
+        height: 500px;
+    }
+    #header .mid .title{
+        font-size: 22px;
+        line-height: 44px;
+        width: 80%;
+    }
+    #header .mid .subtitle{
+        font-size: 16px;
+        line-height: 32px;
+    }
+    #reason-section .table .reason-icon{
+        width: 40px;
+        height: 40px;
+    }
+    #reason-section .subpart-reason .table{
+        font-size: 18px;
+        line-height: 36px;
+    }
+    #visualizing-section .title{
+        font-size: 22px;
+        line-height: 44px;
+    }
+    #visualizing-section .description{
+        font-size: 18px;
+        line-height: 36px;
+    }
+    #product-section .product-title{
+        font-size: 22px;
+        line-height: 44px;
+    }
+
+    #service-section .title{
+        font-size: 30px;
+        line-height: 60px;
+    }
+    #service-section .subpart-title{
+        font-size: 22px;
+        line-height: 44px;
+    }
+    #service-section .subpart-description{
+        font-size: 18px;
+        line-height: 36px;
+    }
+    #service-section .subpart-person .ava{
+        width: 60px;
+        height: 60px;
+    }
+    #service-section .subpart-person .name{
+        font-size: 18px;
+        line-height: 36px;
+    }
+    #service-section .subpart-person .career-position{
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .feeling-description .feeling-title{
+        font-size: 22px;
+        line-height: 44px;
+    }
+    .feeling-description .subpart-description{
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .feeling-description .email{
+        font-size: 10px;
+        line-height: 20px;
+        width: auto;
+        height: auto;
+    }
+    .feeling-description .email img{
+        width: 56px;
+        height: 56px;
+    }
+
+    #footer .footer-logo{
+        width: 160px;
+        height: auto;
+    }
+    #footer .extra-category .footer-title{
+        font-size: 22px;
+        line-height: 44px;
+    }
+    #footer .extra-category .factor{
+        font-size: 18px;
+        line-height: 36px;
+    }
+}
+
+/* PC: width >= 1024px  */
+@media only screen and (min-width: 63.937em){
+    #header .mobile-3bars{
+        display: none;
+    }
+    #product-section .product .price-extra{
+        display: none;
+    }
+}

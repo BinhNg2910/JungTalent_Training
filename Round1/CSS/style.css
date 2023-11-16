@@ -9,6 +9,7 @@ html{
 
 body{
     margin: 0;
+    letter-spacing: 1px;
 }
 
 .clear{
@@ -24,7 +25,6 @@ body{
     color: white;
     height: 1080px;
     width: auto;
-
 }
 
 #header .head{
@@ -44,7 +44,6 @@ body{
 }
 
 #nav{
-    /* align-items: center; */
     margin: 4px 0 0 0;
     padding: 0;
     display: flex;
@@ -53,7 +52,7 @@ body{
 #nav > li{
     font-size: 18px;
     line-height: 27px;
-    margin-right: 60px;
+    margin: 0 30px;
     display: flex;
     align-items: center;
 }
@@ -119,15 +118,21 @@ body{
 #reason-section .table .reason-icon{
     width: 60px;
     height: 60px;
+    margin: 0;
+    padding: 0;
 }
 
 #reason-section .table .title{
     font-weight: 600;
-    margin: 20px 0;
+    /* padding: 10px 0; */
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
 #reason-section .table .description{
-    margin: 0 0 20px 0;
+    padding-bottom: 20px;
+    margin: 0;
     width: 95%;
 }
 
@@ -215,7 +220,8 @@ body{
 }
 
 #product-section{
-    margin: 200px 80px 100px 80px;
+    padding: 200px 80px 100px 80px;
+    margin: 0;
 }
 
 #product-section .product-title{
@@ -223,7 +229,8 @@ body{
     font-size: 36px;
     line-height: 72px;
     font-weight: 600;
-    margin: 0 0 40px 0;
+    padding-bottom: 40px;
+    margin: 0;
 }
 
 #product-section .product-subpart{
@@ -235,36 +242,45 @@ body{
     width: calc((100% - 3*1%)/ 4);
     height: auto;
     font-size: 14px;
+    line-height: 28px;
+    margin: 0;
 }
 
 #product-section .product-img{
     width: 100%;
-    height: 70%;
+    height: 75%;
     background-color: #F6F6F6;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#product-section .product-img > img{
+#product-section .product-img img{
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
+    transition: all 0.3s ease;
 }
 
 #product-section .product-description{
-    margin-top: 20px;
+    padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 33px;
+    padding: 20px 0 33px 20px;
+    margin: 0;
 }
 
 #product-section .product .product-subtitle{
     margin: 0;
     font-size: 18px;
+    line-height: 36px;
 }
 
 #product-section .product .product-type{
     color: #C4C4C4;
-    margin: 10px 0;
+    padding: 10px 0;
+    margin: 0;
 }
 
 #product-section .product .rating-img{
@@ -272,7 +288,8 @@ body{
 }
 
 #product-section .product .price{
-    margin: 20px 0 0 0;
+    padding-top: 20px;
+    margin: 0;
 }
 
 #service-section{
@@ -287,7 +304,8 @@ body{
     font-size: 36px;
     line-height: 72px;
     font-weight: 600;
-    margin: 0 0 110px 0;
+    padding-bottom: 110px;
+    margin: 0;
 }
 
 #service-section .service-description{
@@ -313,7 +331,8 @@ body{
 }
 
 #service-section .subpart-description{
-    margin: 10px 0 20px 0;
+    padding: 10px 0 20px 0;
+    margin: 0;
 }
 
 #service-section .subpart-person{
@@ -491,7 +510,7 @@ body{
     }
     /* reason */
     #reason-section{    
-        padding: 30px 30px 0 30px;
+        padding: 10px 30px 0 30px;
     }
     #reason-section .subpart-reason{
         display: block;
@@ -501,6 +520,7 @@ body{
     }
     #reason-section .subpart-reason .table{
         padding: 10px;
+        padding-bottom: 16px;
         margin: 0;
         font-size: 24px;
         line-height: 48px;
@@ -509,6 +529,7 @@ body{
     #reason-section .table .reason-icon{
         width: 56px;
         height: 56px;
+        padding-top: 10px;
     }
     #reason-section .table .title{
         margin: 0;
@@ -518,9 +539,11 @@ body{
         box-shadow: none;
     }
     #reason-section .table .description{
-        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
-
+    #reason-section .table .more-description{
+        padding-bottom: 10px;
+    }
     /* visualize */
     #visualizing-section{
         flex-direction: column-reverse;
@@ -566,15 +589,17 @@ body{
 
     /* product */
     #product-section{
-        margin: 0;
-        padding-top: 100px;
+        /* margin: 0; */
+        padding: 100px 0 0 0;
+        height: auto;
     }
     
     #product-section .product-title{
         font-size: 36px;
         line-height: 72px;
         font-weight: 600;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
+        margin: 0;
     }
 
     #product-section .product-subpart{
@@ -583,22 +608,40 @@ body{
         padding: 0 20px;
     }
 
+    #product-section .product .product-subtitle,
+    #product-section .product .product-type{
+        margin: 0;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    #product-section .product .rating-img{
+        width: 30%;
+    }
+    #product-section .price-extra{
+        font-size: 20px;
+        line-height: 40px;
+        padding-bottom: 40px;
+    }
     #product-section .product{
         width: calc(100% - 3%);
+        height: 100%;
         font-size: 14px;
-        margin-bottom: 100px;
+        padding-bottom: 25px;
     }
     #product-section .product-img{
         width: 100%;
-        height: 80%;
+        height: 60%;
     }
     #product-section .product-img > img{
         width: 50%;
         height: auto;
     }
     #product-section .product-description{
-        margin: 10px 0 40px 17px;
-        padding: 0;
+        padding: 10px 0 40px 17px;
+        margin: 0;
+        
+        height: 20%;
     }
     .price{
         display: none;
@@ -607,11 +650,12 @@ body{
         display: block !important;
         margin: 0;
     }
+
     /* service */
     #service-section{
         margin-top: 60px;
         padding: 40px 20px 0 20px;
-        height: 1200px;
+        height: auto;
     }
     #service-section .title{
         margin-bottom: 0;
@@ -623,8 +667,6 @@ body{
     }
     #service-section .subpart{
         width: auto;
-        /* font-size: 100px;
-        line-height: 72px; */
         font-weight: 400;
         margin-top: 40px;
     }

@@ -413,6 +413,8 @@ body{
 }
 
 .feeling-description .email img{
+    width: 12%;
+    height: auto;
     float: right;
 }
 
@@ -472,7 +474,7 @@ body{
 
 /* For both mobile and tablet */
 /* 63.9375em */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 64em) {
     #header{
         background: url(/Round1/assets/img/1-header/sofa-mobile.png) top center / cover no-repeat;
         width: auto;
@@ -590,7 +592,7 @@ body{
     /* product */
     #product-section{
         /* margin: 0; */
-        padding: 100px 0 0 0;
+        padding: 100px 20px 60px 20px;
         height: auto;
     }
     
@@ -604,8 +606,12 @@ body{
 
     #product-section .product-subpart{
         display: grid;
-        grid-template-columns: 50% 50%;
-        padding: 0 20px;
+        /* grid-template-columns: 50% 50%;
+        padding: 0 20px; */
+        grid-template-rows: repeat(2, auto); /* Hai hàng */
+        grid-template-columns: repeat(2, 1fr); /* Hai cột */
+        column-gap: 10px;
+        row-gap: 4%;
     }
 
     #product-section .product .product-subtitle,
@@ -621,44 +627,43 @@ body{
     #product-section .price-extra{
         font-size: 20px;
         line-height: 40px;
-        padding-bottom: 40px;
+        display: block !important;
+        margin: 0;
+        padding: 0;
     }
     #product-section .product{
-        width: calc(100% - 3%);
-        height: 100%;
+        width: auto;
+        height: auto;
         font-size: 14px;
-        padding-bottom: 25px;
+        display: flex;
+        flex-direction: column;
     }
     #product-section .product-img{
         width: 100%;
-        height: 60%;
+        height: 80%;
     }
     #product-section .product-img > img{
-        width: 50%;
+        width: 70%;
         height: auto;
+        max-height: 85%;
     }
     #product-section .product-description{
-        padding: 10px 0 40px 17px;
+        padding: 10px 0 0 17px;
         margin: 0;
-        
-        height: 20%;
     }
     .price{
         display: none;
-    }
-    .price-extra{
-        display: block !important;
-        margin: 0;
     }
 
     /* service */
     #service-section{
         margin-top: 60px;
-        padding: 40px 20px 0 20px;
+        padding: 40px 20px 90px 20px;
         height: auto;
     }
     #service-section .title{
         margin-bottom: 0;
+        padding: 0;
     }
     #service-section .service-description{
         display: flex;
@@ -668,7 +673,7 @@ body{
     #service-section .subpart{
         width: auto;
         font-weight: 400;
-        margin-top: 40px;
+        padding-top: 40px;
     }
     #service-section .subpart-title{
         font-size: 28px;
@@ -678,12 +683,14 @@ body{
     #service-section .subpart-description{
         font-size: 24px;
         line-height: 48px;
-        margin: 10px 0 14px 0;
+        padding: 10px 0 14px 0;
+        margin: 0;
     }
     #service-section .subpart-person .ava{
         width: 100px;
         height: 100px;
-        margin-right: 10px;
+        padding-right: 10px;
+        margin: 0;
     }
     #service-section .subpart-person .name{
         font-size: 28px;
@@ -698,9 +705,7 @@ body{
     #feeling-section{
         flex-direction: column;
         margin: 0;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        padding: 0;
+        padding: 100px 0;
     }
     #feeling-section .feeling-img-div{
         width: auto;
@@ -708,7 +713,7 @@ body{
     }
     #feeling-section .feeling-description{
         width: auto;
-        margin-top: 40px;
+        padding: 40px 20px 0 20px;
     }
     .feeling-description .feeling-title{
         font-size: 28px;
@@ -717,17 +722,20 @@ body{
     .feeling-description .subpart-description{
         font-size: 24px;
         line-height: 48px;
-        margin-bottom: 20px;
+        padding: 20px 0;
+        margin: 0;
     }
     .feeling-description .email{
-        font-size: 20px;
-        line-height: 40px;
-        width: 560px;
+        width: 70%;
         height: 76px;
     }
+    .feeling-description .email p{
+        font-size: 20px;
+        line-height: 40px;
+    }
     .feeling-description .email img{
-        width: 56px;
-        height: 56px;
+        width: 10%;
+        padding: 0;       
     }
 
     /* footer */
@@ -823,6 +831,13 @@ body{
         line-height: 36px;
     }
 
+    #product-section .product .product-subtitle,
+    #product-section .product .product-type,
+    #product-section .price-extra{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
     .feeling-description .feeling-title{
         font-size: 22px;
         line-height: 44px;
@@ -834,14 +849,16 @@ body{
     .feeling-description .email{
         font-size: 10px;
         line-height: 20px;
-        width: auto;
-        height: auto;
+        /* width: auto;
+        height: auto; */
+    }
+    .feeling-description .email p{
+        font-size: 16px;
+        line-height: 30px;
     }
     .feeling-description .email img{
-        width: 56px;
-        height: 56px;
+        width: 15%;
     }
-
     #footer .footer-logo{
         width: 160px;
         height: auto;
@@ -856,8 +873,8 @@ body{
     }
 }
 
-/* PC: width >= 1024px  */
-@media only screen and (min-width: 63.937em){
+/* PC: width >= 1025px ( > 1024px)  */
+@media only screen and (min-width: 64.063em){
     #header .mobile-3bars{
         display: none;
     }

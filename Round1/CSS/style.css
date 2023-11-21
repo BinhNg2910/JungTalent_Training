@@ -479,6 +479,7 @@ body{
         background: url(/Round1/assets/img/1-header/sofa-mobile.png) top center / cover no-repeat;
         width: auto;
         height: 800px;
+        /* height: 100%; */
     }
     #nav{
         display: none;
@@ -502,7 +503,7 @@ body{
         font-size: 24px;
         line-height: 48px;
         font-weight: 400;
-        width: 60%;
+        width: 65%;
     }
     #header .mobile-3bars{
         height: 35px;
@@ -512,7 +513,7 @@ body{
     }
     /* reason */
     #reason-section{    
-        padding: 10px 30px 0 30px;
+        padding: 20px 30px 0 30px;
     }
     #reason-section .subpart-reason{
         display: block;
@@ -521,8 +522,8 @@ body{
         display: none;
     }
     #reason-section .subpart-reason .table{
-        padding: 10px;
-        padding-bottom: 16px;
+        padding: 20px;
+        padding-bottom: 20px;
         margin: 0;
         font-size: 24px;
         line-height: 48px;
@@ -549,40 +550,42 @@ body{
     /* visualize */
     #visualizing-section{
         flex-direction: column-reverse;
-        padding-top: 100px;
+        padding: 100px 30px 0 30px;
     }
     .bar{
         display: none;
     }
     #visualizing-section .visualizing-img-div{
         width: auto;
-        padding: 0 20px;
         margin: 0;
     }
     #visualizing-section .visualizing-img{
         width: 100%;
     }
     #visualizing-section .title{
+        padding-top: 150px;
         font-size: 36px;
         line-height: 72px;
-        margin-top: 100px;
     }
     #visualizing-section .description{
-        padding: 0 20px 0 20px;
+        padding: 0;
         font-size: 24px;
         line-height: 48px;
         width: auto;
     }
     #visualizing-section .description_1{
-        padding-bottom: 10px;
-        margin-top: 20px;
+        padding: 30px 0 20px 0;
+        margin: 0;
+        width: 100%;
     }
     #visualizing-section .description_2{
-        margin: 10px 0 0 0;
-        padding-bottom: 10px;
+        margin: 0;
+        padding: 20px 0 20px 0;
+        width: 100%;
     }
     #visualizing-section .category{
-        margin-top: 10px;
+        margin: 0;
+        padding-top: 50px;
         width: 100%;
     }
     #visualizing-section .more-description{
@@ -777,99 +780,147 @@ body{
         height: 500px;
     }
     #header .mid .title{
-        font-size: 22px;
-        line-height: 44px;
+        font-size: 18px;
+        line-height: 27px;
         width: 80%;
     }
     #header .mid .subtitle{
-        font-size: 16px;
-        line-height: 32px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    #reason-section{
+        padding-top: 20px;
     }
     #reason-section .table .reason-icon{
-        width: 40px;
-        height: 40px;
+        width: 28px;
+        height: 28px;
     }
     #reason-section .subpart-reason .table{
+        font-size: 12px;
+        line-height: 24px;
+        padding: 0;
+        padding-bottom: 15px;
+    }
+    /* #reason-section .subpart-reason .table .title{
+        font-size: 12px;
+        line-height: 24px;
+    } */
+
+    #visualizing-section .title{
         font-size: 18px;
         line-height: 36px;
-    }
-    #visualizing-section .title{
-        font-size: 22px;
-        line-height: 44px;
+        padding-top: 100px;
     }
     #visualizing-section .description{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    #visualizing-section .category{
+        padding-top: 20px;
+        margin: 0;
+    }
+    #visualizing-section .description_1{
+        padding: 20px 0 20px 0;
+        margin: 0;
+        width: 100%;
+    }
+    #visualizing-section .description_2{
+        margin: 0;
+        padding: 10px 0 20px 0;
+        width: 100%;
+    }
+
+    #product-section .product-title{
         font-size: 18px;
         line-height: 36px;
     }
-    #product-section .product-title{
-        font-size: 22px;
-        line-height: 44px;
+    #product-section .product .product-subtitle{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    #product-section .product .product-type,
+    #product-section .price-extra{
+        font-size: 12px;
+        line-height: 24px;
     }
 
     #service-section .title{
-        font-size: 30px;
-        line-height: 60px;
+        font-size: 18px;
+        line-height: 36px;
     }
     #service-section .subpart-title{
-        font-size: 22px;
-        line-height: 44px;
+        font-size: 14px;
+        line-height: 28px;
     }
     #service-section .subpart-description{
-        font-size: 18px;
-        line-height: 36px;
+        font-size: 12px;
+        line-height: 24px;
     }
     #service-section .subpart-person .ava{
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
     }
     #service-section .subpart-person .name{
-        font-size: 18px;
-        line-height: 36px;
+        font-size: 14px;
+        line-height: 28px;
     }
     #service-section .subpart-person .career-position{
-        font-size: 18px;
-        line-height: 36px;
-    }
-
-    #product-section .product .product-subtitle,
-    #product-section .product .product-type,
-    #product-section .price-extra{
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 12px;
+        line-height: 24px;
     }
 
     .feeling-description .feeling-title{
-        font-size: 22px;
-        line-height: 44px;
+        font-size: 14px;
+        line-height: 28px;
     }
     .feeling-description .subpart-description{
-        font-size: 18px;
-        line-height: 36px;
+        font-size: 12px;
+        line-height: 24px;
     }
     .feeling-description .email{
-        font-size: 10px;
-        line-height: 20px;
-        /* width: auto;
-        height: auto; */
-    }
-    .feeling-description .email p{
-        font-size: 16px;
-        line-height: 30px;
-    }
-    .feeling-description .email img{
-        width: 15%;
-    }
-    #footer .footer-logo{
-        width: 160px;
+        /* font-size: 10px;
+        line-height: 20px; */
         height: auto;
     }
+    .feeling-description .email p{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .feeling-description .email img{
+        width: 10%;
+        padding: 1%;
+    }
+
+    #footer .footer-logo{
+        width: 35%;
+        height: auto;
+    }
+    #footer .extra-category{
+        margin: 0;
+        padding: 20px;
+    }
+    #footer .category{
+        padding-top: 40px;
+        margin: 0;
+    }
     #footer .extra-category .footer-title{
-        font-size: 22px;
-        line-height: 44px;
+        font-size: 14px;
+        line-height: 21px;
     }
     #footer .extra-category .factor{
-        font-size: 18px;
-        line-height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #footer .copyright{
+        margin: 0;
+        padding-top: 80px;
+        padding-bottom: 30px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #footer .copyright p{
+        margin: 0;
     }
 }
 

@@ -782,11 +782,12 @@ body{
     #header .mid .title{
         font-size: 18px;
         line-height: 27px;
-        width: 80%;
+        width: 75%;
     }
     #header .mid .subtitle{
         font-size: 12px;
         line-height: 24px;
+        width: 70%;
     }
 
     #reason-section{
@@ -807,6 +808,9 @@ body{
         line-height: 24px;
     } */
 
+    #visualizing-section{
+        padding: 85px 20px 0 20px;
+    }
     #visualizing-section .title{
         font-size: 18px;
         line-height: 36px;

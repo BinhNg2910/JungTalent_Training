@@ -338,6 +338,7 @@ body{
 #service-section .subpart-person{
     display: flex;
     bottom: 0;
+    align-items: center;
 }
 
 #service-section .subpart-person .ava{
@@ -493,8 +494,8 @@ body{
         margin-top: 100px;
     }
     #header .mid .title{
-        font-size: 36px;
-        line-height: 72px;
+        font-size: 18px;
+        line-height: 27px;
         font-weight: 600;
         margin: 0 0 20px 0;
         width: 60%;
@@ -513,7 +514,7 @@ body{
     }
     /* reason */
     #reason-section{    
-        padding: 20px 30px 0 30px;
+        padding: 20px;
     }
     #reason-section .subpart-reason{
         display: block;
@@ -522,17 +523,18 @@ body{
         display: none;
     }
     #reason-section .subpart-reason .table{
-        padding: 20px;
-        padding-bottom: 20px;
+        padding: 10x;
         margin: 0;
-        font-size: 24px;
-        line-height: 48px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 32px;
         width: 100%;
     }
     #reason-section .table .reason-icon{
-        width: 56px;
-        height: 56px;
-        padding-top: 10px;
+        /* width: 56px;
+        height: 56px; */
+        width: 34px;
+        height: 34px;
     }
     #reason-section .table .title{
         margin: 0;
@@ -550,7 +552,7 @@ body{
     /* visualize */
     #visualizing-section{
         flex-direction: column-reverse;
-        padding: 100px 30px 0 30px;
+        padding: 85px 20px 0 20px;
     }
     .bar{
         display: none;
@@ -563,33 +565,35 @@ body{
         width: 100%;
     }
     #visualizing-section .title{
-        padding-top: 150px;
-        font-size: 36px;
-        line-height: 72px;
+        padding-top: 100px;
+        font-size: 22px;
+        line-height: 44px;
     }
     #visualizing-section .description{
         padding: 0;
-        font-size: 24px;
-        line-height: 48px;
+        font-size: 14px;
+        line-height: 28px;
         width: auto;
+        padding: 0;
     }
     #visualizing-section .description_1{
-        padding: 30px 0 20px 0;
+        padding: 20px 0;
         margin: 0;
         width: 100%;
     }
     #visualizing-section .description_2{
         margin: 0;
-        padding: 20px 0 20px 0;
+        padding: 10px 0 0 0;
         width: 100%;
     }
     #visualizing-section .category{
         margin: 0;
-        padding-top: 50px;
+        padding-top: 20px;
         width: 100%;
     }
     #visualizing-section .more-description{
-        margin: 20px 0 0 0;
+        padding-top: 20px;
+        margin: 0;
     }
 
     /* product */
@@ -600,8 +604,8 @@ body{
     }
     
     #product-section .product-title{
-        font-size: 36px;
-        line-height: 72px;
+        font-size: 22px;
+        line-height: 44px;
         font-weight: 600;
         padding-bottom: 20px;
         margin: 0;
@@ -617,19 +621,22 @@ body{
         row-gap: 4%;
     }
 
-    #product-section .product .product-subtitle,
-    #product-section .product .product-type{
+    #product-section .product .product-subtitle{
         margin: 0;
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 36px;
+    }
+    #product-section .product .product-type{
+        font-size: 16px;
+        line-height: 32px;   
     }
 
     #product-section .product .rating-img{
         width: 30%;
     }
     #product-section .price-extra{
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 16px;
+        line-height: 32px;
         display: block !important;
         margin: 0;
         padding: 0;
@@ -667,6 +674,8 @@ body{
     #service-section .title{
         margin-bottom: 0;
         padding: 0;
+        font-size: 22px;
+        line-height: 44px;
     }
     #service-section .service-description{
         display: flex;
@@ -679,29 +688,29 @@ body{
         padding-top: 40px;
     }
     #service-section .subpart-title{
-        font-size: 28px;
-        line-height: 56px;
+        font-size: 18px;
+        line-height: 36px;
         margin: 0;
     }
     #service-section .subpart-description{
-        font-size: 24px;
-        line-height: 48px;
+        font-size: 14px;
+        line-height: 28px;
         padding: 10px 0 14px 0;
         margin: 0;
     }
     #service-section .subpart-person .ava{
-        width: 100px;
-        height: 100px;
+        width: 40px;
+        height: 40px;
         padding-right: 10px;
         margin: 0;
     }
     #service-section .subpart-person .name{
-        font-size: 28px;
-        line-height: 56px;
+        font-size: 14px;
+        line-height: 28px;
     }
     #service-section .subpart-person .career-position{
-        font-size: 24px;
-        line-height: 48px;
+        font-size: 12px;
+        line-height: 24px;
     }
 
     /* feeling */
@@ -719,26 +728,26 @@ body{
         padding: 40px 20px 0 20px;
     }
     .feeling-description .feeling-title{
-        font-size: 28px;
-        line-height: 56px;
+        font-size: 22px;
+        line-height: 44px;
     }
     .feeling-description .subpart-description{
-        font-size: 24px;
-        line-height: 48px;
+        font-size: 14px;
+        line-height: 28px;
         padding: 20px 0;
         margin: 0;
     }
     .feeling-description .email{
         width: 70%;
-        height: 76px;
+        height: auto;
     }
     .feeling-description .email p{
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 14px;
+        line-height: 28px;
     }
     .feeling-description .email img{
-        width: 10%;
-        padding: 0;       
+        width: 9%;
+        padding: 1%;       
     }
 
     /* footer */
@@ -746,30 +755,32 @@ body{
         height: auto;
         margin-top: 0;
     }
+    #footer .category{
+        margin: 0;
+        padding-top: 60px;
+    }
     #footer .extra-category{
         flex-direction: column;
-        padding: 40px;
+        padding:40px;
     }
     #footer .footer-logo{
-        width: 200px;
+        width: 25%;
         height: auto;
     }
     #footer .extra-category .footer-title{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 36px;
     }
     #footer .extra-category .factor{
-        font-size: 20px;
-        line-height: 30px;
-    }
-    #footer .category{
-        margin-top: 80px;
+        font-size: 14px;
+        line-height: 28px;
     }
     #footer .extra-category .factor{
         margin: 20px 0 0 0;
     }
     #footer .copyright p{
-        margin: 100px 0 20px 0;
+        padding: 60px 0 20px 0;
+        margin: 0;
     }
 }
 
@@ -791,7 +802,6 @@ body{
     }
 
     #reason-section{
-        padding-top: 20px;
     }
     #reason-section .table .reason-icon{
         width: 28px;
@@ -800,21 +810,17 @@ body{
     #reason-section .subpart-reason .table{
         font-size: 12px;
         line-height: 24px;
-        padding: 0;
-        padding-bottom: 15px;
+        /* padding: 0; */
+        /* padding-bottom: 15px; */
     }
-    /* #reason-section .subpart-reason .table .title{
-        font-size: 12px;
-        line-height: 24px;
-    } */
 
     #visualizing-section{
-        padding: 85px 20px 0 20px;
+        /* padding: 85px 20px 0 20px; */
     }
     #visualizing-section .title{
         font-size: 18px;
         line-height: 36px;
-        padding-top: 100px;
+        /* padding-top: 100px; */
     }
     #visualizing-section .description{
         font-size: 12px;
@@ -897,7 +903,7 @@ body{
     }
 
     #footer .footer-logo{
-        width: 35%;
+        width: 30%;
         height: auto;
     }
     #footer .extra-category{
@@ -924,7 +930,6 @@ body{
         line-height: 18px;
     }
     #footer .copyright p{
-        margin: 0;
     }
 }
 

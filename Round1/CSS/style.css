@@ -95,16 +95,18 @@ body{
 #reason-section{
     padding: 80px 80px 0 80px;
 }
-
 #reason-section .question{
     font-size: 36px;
     line-height: 72px;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
-
+#reason-section .question p{
+    margin: 0;
+}
 #reason-section .subpart-reason{
     display: flex;
+    width: 100%;
 }
 
 #reason-section .subpart-reason .table{
@@ -113,6 +115,10 @@ body{
     width: calc(100% / 4) ;
     padding: 16px 20px 20px 20px;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 #reason-section .table .reason-icon{
@@ -494,15 +500,15 @@ body{
         margin-top: 100px;
     }
     #header .mid .title{
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 26px;
+        line-height: 52px;
         font-weight: 600;
         margin: 0 0 20px 0;
         width: 60%;
     }
     #header .mid .subtitle{
-        font-size: 24px;
-        line-height: 48px;
+        font-size: 18px;
+        line-height: 36px;
         font-weight: 400;
         width: 65%;
     }
@@ -515,6 +521,8 @@ body{
     /* reason */
     #reason-section{    
         padding: 20px;
+        display: flex;
+        flex-direction: column-reverse;
     }
     #reason-section .subpart-reason{
         display: block;
@@ -529,6 +537,7 @@ body{
         font-size: 16px;
         line-height: 32px;
         width: 100%;
+        
     }
     #reason-section .table .reason-icon{
         /* width: 56px;

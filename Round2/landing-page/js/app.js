@@ -43,12 +43,21 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
+
+
+
+  // let sections = document.querySelectorAll('section');
+  
+  const newSection = createNewSection(3);
+
+  document.querySelector('main').appendChild(newSection);
+
   const sections = document.querySelectorAll('section');
 
-  // Create the navigation bar
   const navbarList = document.getElementById('navbar__list');
 
   sections.forEach((section, index) => {
+    // console.log(index);
     const listItem = document.createElement('li');
     const link = document.createElement('a');
 
@@ -68,12 +77,39 @@ document.addEventListener('DOMContentLoaded', function () {
     navbarList.appendChild(listItem);
   });
 
+  // Create a new section (Section 4)
+
+
+  // Update the navigation bar with the new section
+  // const listItem = document.createElement('li');
+  // const link = document.createElement('a');
+  // link.setAttribute('href', `#section4`);
+  // link.textContent = `Section 4`;
+
+  // listItem.appendChild(link);
+  // navbarList.appendChild(listItem);
+
+  // Function to create a new section
+  function createNewSection(sectionNumber) {
+    const sections = document.querySelectorAll('section');
+    const newSection = document.createElement('section');
+    newSection.id = `section${sectionNumber + 1}`;
+    newSection.setAttribute('data-nav', `Section ${sectionNumber + 1}`);
+
+    // Duplicate content from the first section (you can customize this)
+    newSection.innerHTML = sections[0].innerHTML;
+    const newH2 = newSection.querySelector('h2');
+    newH2.textContent = `Section ${sectionNumber + 1}`;
+
+    return newSection;
+  }
+
   // Add an event listener to highlight the active section in the navigation bar
   document.addEventListener('scroll', function () {
     let currentSectionId = '';
     const navbar = document.querySelector('.navbar__menu');
     const navItems = navbar.querySelectorAll('.navbar__menu li');
-    
+
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
       if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
@@ -90,21 +126,51 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (currentSection) {
       currentSection.classList.add('your-active-class');
-      
+
       navItems.forEach((item) => {
         item.classList.remove('nav_active_state');
         const link = item.querySelector('a');
-        console.log('#' + currentSectionId);
-        // console.log(link.getAttribute('href'));
-        if( link.getAttribute('href') === ('#' + currentSectionId) ) {
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
           item.classList.add('nav_active_state');
-
         }
       });
     }
-
   });
 });
+
+//create 4th section
+// document.addEventListener('DOMContentLoaded', function () {
+//   const sections = document.querySelectorAll('section');
+//   const navbarList = document.getElementById('navbar__list');
+
+//   // Function to create a new section
+//   function createNewSection(sectionNumber) {
+//     const newSection = document.createElement('section');
+//     newSection.id = `section${sectionNumber + 1}`;
+//     newSection.setAttribute('data-nav', `Section ${sectionNumber + 1}`);
+
+//     // Duplicate content from the first section (you can customize this)
+//     newSection.innerHTML = sections[0].innerHTML;
+//     const newH2 = newSection.querySelector('h2');
+//     newH2.textContent = `Section ${sectionNumber + 1}`;    
+
+//     return newSection;
+//   }
+
+//   // Add Section 4
+//   // for (let i = 3; i < 4; i++) {
+//     const newSection = createNewSection(3);
+//     document.querySelector('main').appendChild(newSection);
+
+//     // Update the navigation bar with the new sections
+//     const listItem = document.createElement('li');
+//     const link = document.createElement('a');
+//     link.setAttribute('href', `#section4`);
+//     link.textContent = `Section 4`;
+//     listItem.appendChild(link);
+//     navbarList.appendChild(listItem);
+//   // }
+// });
 
 document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.querySelector('.navbar__menu');
@@ -129,19 +195,26 @@ document.addEventListener('DOMContentLoaded', function () {
   function applyNavItemStyles(item, link) {
     item.style.display = 'inline-block';
     item.style.marginRight = '15px';
+    item.style.padding = '10px';
+    // item.style.border = '1px circular solid';
 
     link.style.textDecoration = 'none';
     link.style.color = 'white';
     link.style.fontWeight = 'bold';
-
+    link.style.fontSize = '20px';
+    // link.style.lineHeight = '40px'; 
     // Change styles on hover
     item.addEventListener('mouseover', function () {
-      link.style.borderBottom = '2px solid white';
+      // link.style.borderBottom = '2px solid white';
+      link.style.backgroundColor = 'black';
     });
 
     item.addEventListener('mouseout', function () {
-      link.style.borderBottom = 'none';
+      // link.style.borderBottom = 'none';
+      link.style.backgroundColor = '';
     });
+
+    item.style.transition = 'background-color 0.3s ease';
   }
 });
 
@@ -175,38 +248,7 @@ function getScrollbarWidth() {
 
 // Set sections as active
 
-//create 4th section
-// document.addEventListener('DOMContentLoaded', function () {
-//   const sections = document.querySelectorAll('section');
-//   const navbarList = document.getElementById('navbar__list');
 
-//   // Function to create a new section
-//   function createNewSection(sectionNumber) {
-//     const newSection = document.createElement('section');
-//     newSection.id = `section${sectionNumber + 1}`;
-//     newSection.setAttribute('data-nav', `Section ${sectionNumber + 1}`);
-//     newSection.classList.add('landing__container');
-
-//     // Duplicate content from the first section (you can customize this)
-//     newSection.innerHTML = sections[0].innerHTML;
-
-//     return newSection;
-//   }
-
-//   // Add three more sections
-//   for (let i = 3; i < 4; i++) {
-//     const newSection = createNewSection(i);
-//     document.querySelector('main').appendChild(newSection);
-
-//     // Update the navigation bar with the new sections
-//     const listItem = document.createElement('li');
-//     const link = document.createElement('a');
-//     link.setAttribute('href', `#section${i + 1}`);
-//     link.textContent = `Section ${i + 1}`;
-//     listItem.appendChild(link);
-//     navbarList.appendChild(listItem);
-//   }
-// });
 
 
 // Scroll button to the top page

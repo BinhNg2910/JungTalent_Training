@@ -225,23 +225,21 @@ section.your-active-class .landing__container::after {
 
 /* add more style */
 .your-active-class {
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8 !important; */
 }
   
 
 .your-active-class h2 {
-    color: #007bff;
+    /* color: #007bff !important; */
 }
 
-.nav_active_state{
-    /* text-decoration: underline !important;  */
-    border-bottom: 2px solid white !important;
-    
+
+.nav_active_state {
+    background-color: black !important; /* Change to your desired background color */
 }
-  
-.navbar__menu li.active a {
-    text-decoration: underline; /* Customize with your preferred style */
-}
+
+/* Optional: Add styles for hover effect on navigation items */
+
 
 #scrollToTopButton {
     display: none;

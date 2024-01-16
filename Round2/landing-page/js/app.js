@@ -76,19 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     listItem.appendChild(link);
     navbarList.appendChild(listItem);
   });
-
-  // Create a new section (Section 4)
-
-
-  // Update the navigation bar with the new section
-  // const listItem = document.createElement('li');
-  // const link = document.createElement('a');
-  // link.setAttribute('href', `#section4`);
-  // link.textContent = `Section 4`;
-
-  // listItem.appendChild(link);
-  // navbarList.appendChild(listItem);
-
+  
   // Function to create a new section
   function createNewSection(sectionNumber) {
     const sections = document.querySelectorAll('section');
@@ -138,40 +126,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-//create 4th section
-// document.addEventListener('DOMContentLoaded', function () {
-//   const sections = document.querySelectorAll('section');
-//   const navbarList = document.getElementById('navbar__list');
-
-//   // Function to create a new section
-//   function createNewSection(sectionNumber) {
-//     const newSection = document.createElement('section');
-//     newSection.id = `section${sectionNumber + 1}`;
-//     newSection.setAttribute('data-nav', `Section ${sectionNumber + 1}`);
-
-//     // Duplicate content from the first section (you can customize this)
-//     newSection.innerHTML = sections[0].innerHTML;
-//     const newH2 = newSection.querySelector('h2');
-//     newH2.textContent = `Section ${sectionNumber + 1}`;    
-
-//     return newSection;
-//   }
-
-//   // Add Section 4
-//   // for (let i = 3; i < 4; i++) {
-//     const newSection = createNewSection(3);
-//     document.querySelector('main').appendChild(newSection);
-
-//     // Update the navigation bar with the new sections
-//     const listItem = document.createElement('li');
-//     const link = document.createElement('a');
-//     link.setAttribute('href', `#section4`);
-//     link.textContent = `Section 4`;
-//     listItem.appendChild(link);
-//     navbarList.appendChild(listItem);
-//   // }
-// });
-
 document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.querySelector('.navbar__menu');
   applyNavbarStyles(navbar);
@@ -196,21 +150,17 @@ document.addEventListener('DOMContentLoaded', function () {
     item.style.display = 'inline-block';
     item.style.marginRight = '15px';
     item.style.padding = '10px';
-    // item.style.border = '1px circular solid';
 
     link.style.textDecoration = 'none';
     link.style.color = 'white';
     link.style.fontWeight = 'bold';
     link.style.fontSize = '20px';
-    // link.style.lineHeight = '40px'; 
     // Change styles on hover
     item.addEventListener('mouseover', function () {
-      // link.style.borderBottom = '2px solid white';
       link.style.backgroundColor = 'black';
     });
 
     item.addEventListener('mouseout', function () {
-      // link.style.borderBottom = 'none';
       link.style.backgroundColor = '';
     });
 
@@ -257,8 +207,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Function to check and toggle the visibility of the "scroll to top" button
   function toggleScrollToTopButton() {
-    // const scrollY = window.scrollY;
-
     // Adjust the threshold as needed for when the button should appear
     if (window.scrollY > window.innerHeight) {
       scrollToTopButton.style.display = 'block';
@@ -285,13 +233,11 @@ document.addEventListener('DOMContentLoaded', function () {
   function hideNavbar() {
     navbar.style.transform = 'translateY(-100%)';
     mainContent.style.marginTop = '0';
-    // navbar.style.display = 'none';
   }
 
   function showNavbar() {
     navbar.style.transform = 'translateY(0)';
     mainContent.style.marginTop = navbar.offsetHeight + 'px';
-    // navbar.style.display = 'block';
   }
 
   function handleScroll() {
@@ -301,9 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if( window.scrollY === 0 ) {
       showNavbar();
     } else {
-      // if(!isMouseOverElement) {
-        isScrolling = setTimeout( function() { hideNavbar() }, 2000);
-      // }
+      isScrolling = setTimeout( function() { hideNavbar() }, 2000);
     }
     showNavbar();
   }
